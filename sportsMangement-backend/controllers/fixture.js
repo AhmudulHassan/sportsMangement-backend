@@ -27,11 +27,6 @@ export const newFixture = async (req, res) => {
   }
 }
 
-// Get all Event
-// export const allEvent = async (req, res) => {
-//   const all = await Event.find().exec()
-//   res.json(all)
-// }
 
 // Get all Event
 export const specificFixture = async (req, res) => {
@@ -40,12 +35,3 @@ export const specificFixture = async (req, res) => {
 }
 
 
-// export const deleteEvent = async (req, res) => {
-//   try {
-//     const id = req.params.id;
-//     await Event.findByIdAndDelete(id);
-//     res.status(200).json({ message: 'Item deleted successfully' });
-//   } catch (error) {
-//     res.status(500).json({ error: error.message });
-//   }
-// }
